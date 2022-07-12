@@ -11,7 +11,7 @@ bool subsetsum(int arr[], int n, int Sum)
         {
             if (i == 0 && j > 0)
                 dp[i][j] = 0;
-            else if (j == 0)
+            if (j == 0)
                 dp[i][j] = 1;
             else if (arr[i - 1] <= j)
                 dp[i][j] = dp[i - 1][j - arr[i - 1]] || dp[i - 1][j];
@@ -25,6 +25,6 @@ int main()
 {
     int arr[]{2, 3, 7, 8, 10};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int sum = 11;
+    int sum = 1;
     cout << subsetsum(arr, n, sum);
 }
