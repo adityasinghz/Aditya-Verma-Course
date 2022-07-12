@@ -10,7 +10,7 @@ bool subsetsum(int arr[], int n, int sum)
         {
             if (i == 0 && j > 0)
                 dp[i][j] = 0;
-            if (j == 0)
+            else if (j == 0)
                 dp[i][j] = 1;
             else if (arr[i - 1] <= j)
                 dp[i][j] = dp[i - 1][j - arr[i - 1]] || dp[i - 1][j];
