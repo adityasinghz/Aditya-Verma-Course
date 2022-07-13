@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int MinimumSubsetSum(int arr[], int n)
+int MinimumSubsetSumDifference(int arr[], int n)
 {
     int sum = accumulate(arr, arr + n, 0);
 
@@ -39,5 +39,5 @@ int main()
 {
     int n = 3;
     int arr[]{1, 2, 7};
-    cout << MinimumSubsetSum(arr, n);
+    cout << MinimumSubsetSumDifference(arr, n);
 }
