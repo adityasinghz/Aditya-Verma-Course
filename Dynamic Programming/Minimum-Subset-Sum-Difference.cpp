@@ -37,7 +37,7 @@ int MinimumSubsetSumDifference(int arr[], int n)
 }
 int main()
 {
-    int n = 3;
-    int arr[]{1, 2, 7};
+    int n = 4;
+    int arr[]{1, 2, 7, 1};
     cout << MinimumSubsetSumDifference(arr, n);
 }
